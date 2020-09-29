@@ -1,0 +1,382 @@
+/*******************************************************************************
+*                            Assignment 3 - Die Object                         *
+*                                                                              *
+* PROGRAMMER:       Ben-McEwen                                                 *
+* CLASS:            CS102                                                      *
+* ASSIGNMENT:       Assignment assign-3                                        *
+* INSTRUCTOR:       Dean Zeller                                                *
+* SUBMISSION DATE:  Feb 15                                                     *
+*                                                                              *
+* DESCRIPTION:                                                                 *
+* description-of-program                                                       *
+*                                                                              *
+* COPYRIGHT:                                                                   *
+* This program is copyright (c) 2019 your-name and Dean Zeller. This is        *
+* original work, without use of outside sources.                               *
+*******************************************************************************/
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class ExtraDieObject
+{
+    public static void main(String[] args)
+    {   
+    }    
+        public Static void cube()
+        {
+            
+            System.out.println();
+            RandomHieroglyphGeneratingpolyhedron cube = new RandomHieroglyphGeneratingpolyhedron();
+            cube.name = "Six-Sided Die";
+            cube.sides = 6;
+            System.out.println("Test: "  + cube.name + "(D6)");
+            cube.roll();
+            cube.cheaterCheater();
+            cube.roll10();
+            System.out.println();
+            System.out.println("Press enter to return to Main Menu");
+            
+            DieObject.returnToMain();
+        }
+        
+        public static void hectohedron()
+        {
+            System.out.println();
+            RandomHieroglyphGeneratingpolyhedron hectohedron = new RandomHieroglyphGeneratingpolyhedron();
+            hectohedron.name = "Percentile Die";
+            hectohedron.sides = 100;
+            System.out.println("Test: "  + hectohedron.name + "(D100)");
+            hectohedron.roll();
+            hectohedron.cheaterCheater();
+            hectohedron.roll10();
+            System.out.println();
+            
+            DieObject.returnToMain();
+        }
+        
+        public static void dodecahedron()
+        {
+            System.out.println();
+            RandomHieroglyphGeneratingpolyhedron dodecahedron = new RandomHieroglyphGeneratingpolyhedron();
+            dodecahedron.name = "Random Month";
+            dodecahedron.sides = 12;
+            System.out.println("Test: "  + dodecahedron.name + "(D12)");
+            dodecahedron.roll();
+            dodecahedron.cheaterCheater();
+            dodecahedron.roll10(); 
+            System.out.println();
+            
+            DieObject.returnToMain();
+        }
+        
+        public static void cubex2()
+        {
+            System.out.println();
+            RandomHieroglyphGeneratingpolyhedron cubex2 = new RandomHieroglyphGeneratingpolyhedron();
+            cubex2.name = "Monopoly turn";
+            cubex2.sides = 6;
+            System.out.println("Test: "  + cubex2.name + "(2D6 added together)");
+            cubex2.doubleRoll();
+            cubex2.doubleRoll10();
+            System.out.println();
+            
+            DieObject.returnToMain();
+        }
+        
+        public static void cubex5()
+        {
+            System.out.println();
+            RandomHieroglyphGeneratingpolyhedron cubex5 = new RandomHieroglyphGeneratingpolyhedron();
+            cubex5.name = "Yahtzee";
+            cubex5.sides = 6;
+            System.out.println("Test: "  + cubex5.name + "(Chance field) (5D6 added together)");
+            cubex5.quintupleRoll();
+            cubex5.quintupleRoll10();
+            System.out.println();
+            
+            DieObject.returnToMain();
+        }
+        
+        public static void icosahedron()
+        {
+            System.out.println();
+            RandomHieroglyphGeneratingpolyhedron icosahedron = new RandomHieroglyphGeneratingpolyhedron();
+            String query;
+            int value, sides;
+            ArrayList<String> phrases = new ArrayList<String>();
+            Scanner reader1 = new Scanner(System.in);
+            //https://futureofworking.com/20-funny-magic-8-ball-sayings/
+            phrases.add("As I See It, Yes");
+            phrases.add("Ask again later");
+            phrases.add("Better not tell you now");
+            phrases.add("Cannot predict now");
+            phrases.add("Concentrate and ask again");
+            phrases.add("Don't Count on it");
+            phrases.add("It is Certain");
+            phrases.add("It is decidedly so");
+            phrases.add("Most likely");
+            phrases.add("My reply is No");
+            phrases.add("My sources say no");
+            phrases.add("Outlook not so good");
+            phrases.add("Reply hazy, try again");
+            phrases.add("Signs point to Yes");
+            phrases.add("Very Doubtful");
+            phrases.add("Yes!");
+            phrases.add("Yes, Definitely");
+            phrases.add("You may rely on it");
+            phrases.add("Without a doubt");
+            phrases.add("Outlook good");
+            icosahedron.name = "Magic 8-Ball";
+            icosahedron.sides = 20;
+            System.out.println("Test: "  + icosahedron.name + "(D20)");
+            System.out.print("Please type a question then press enter =>");
+            query = reader1.nextLine();
+            //System.out.println(phrases);
+            value = (int)(Math.random() * icosahedron.sides) + 1;
+            System.out.println("    Response #" + (value+1) + ": " + phrases.get(value));
+            
+            DieObject.returnToMain();
+        }
+        
+        public static void displayMenu()
+        {
+            System.out.println();
+            System.out.println("Random Hieroglyph Generating Polyhedrons");
+            System.out.println("----------------------------------------");
+            
+            Scanner input = new Scanner(System.in);
+            System.out.println("1: Six-sided die (D6)");
+            System.out.println("2: Percentile die (D100)");
+            System.out.println("3: Random month (D12)");
+            System.out.println("4: Monopoly turn (2D6 added together)");
+            System.out.println("5: Yahtzee (Chance field) (5D6 added together)");
+            System.out.println("6: Magic 8-Ball (D20)");
+            System.out.println("7: Exit program");
+            System.out.println();
+            System.out.println("Please enter a menu number: ");
+            String choice = input.nextLine();
+            
+            switch (choice) 
+            {
+                case "1":
+                    DieObject.cube();
+                    break;
+                    
+                case "2":
+                    DieObject.hectohedron();
+                    break;
+                    
+                case "3":
+                    
+                    DieObject.dodecahedron();
+                    break;
+                    
+                case "4":
+                    
+                    DieObject.cubex2();
+                    break;
+                    
+                case "5":
+                    DieObject.cubex5();
+                    break;
+                    
+                case "6":
+                    DieObject.icosahedron();
+                    break;
+                    
+                case "7":
+                    System.exit(0);
+                    break;                    
+                    
+                default:
+                    System.out.println("Command not recognized"); 
+                    System.out.println("Please Try Again");
+                    DieObject.displayMenu();
+            }
+                    
+        }
+        public static void returnToMain()
+        { 
+             System.out.println("Press Enter key to continue...");
+             try
+             {
+                 System.in.read();
+             }  
+             catch(Exception e)
+             {
+             }  
+             
+             DieObject.displayMenu(); 
+        }
+
+}
+
+
+
+
+class RandomHieroglyphGeneratingpolyhedron
+{
+    String name;
+    int sides;
+    int value, value1, value2, value3, value4, value5, x, x2, x3, x4, x5, xSum, valueSum;
+    ArrayList<Integer> tests = new ArrayList<Integer>();
+  
+    /*
+    public RandomHieroglyphGeneratingpolyhedron(int value_)
+    {
+        value = value_;
+    }
+    
+    public void setValue(int value_)
+    {
+        value = value_;
+    }
+    
+    public String getValue()
+    {
+        return value;
+    }
+    */
+
+    
+    void roll() 
+    {
+        value = (int)(Math.random() * sides) + 1;
+        System.out.println("    Single number test: " + value);        
+    }
+    void doubleRoll() 
+    {
+        value1 = (int)(Math.random() * sides) + 1;
+        value2 = (int)(Math.random() * sides) + 1;
+        value = value1 + value2;
+        System.out.println("    Single number test: " +value + " " + value2); 
+        System.out.println("    Single number test sum : " + value ); 
+    }
+    void quintupleRoll() 
+    {
+        value1 = (int)(Math.random() * sides) + 1;
+        value2 = (int)(Math.random() * sides) + 1;
+        value3 = (int)(Math.random() * sides) + 1;
+        value4 = (int)(Math.random() * sides) + 1;
+        value5 = (int)(Math.random() * sides) + 1;
+        
+        value = value1 + value2 + value3 + value4 + value5;
+        System.out.println("    Single number test: " + value1 + " " + value2 + " " + value3 + " "
+                               + value4 + " " + value5); 
+        System.out.println("    Single number test sum: " + value ); 
+    }
+ 
+    void roll10()
+    {
+        for(int i = 0; i<10; i++) 
+        {
+            x = (int)(Math.random() * sides) + 1;
+            tests.add(x);   
+        }
+        System.out.println("    Multiple number test: " + tests);
+    }
+    void doubleRoll10()
+    {
+        for(int i = 0; i<10; i++) 
+        {
+            x = (int)(Math.random() * sides) + 1;
+            x2 = (int)(Math.random() * sides) + 1;
+            xSum = (x + x2);
+            tests.add(xSum);   
+        }
+        System.out.println("    Multiple number test: " + tests);
+    }
+    
+    void quintupleRoll10()
+    {
+        for(int i = 0; i<10; i++) 
+        {
+            x = (int)(Math.random() * sides) + 1;
+            x2 = (int)(Math.random() * sides) + 1;
+            x3 = (int)(Math.random() * sides) + 1;
+            x4 = (int)(Math.random() * sides) + 1;
+            x5 = (int)(Math.random() * sides) + 1;
+            xSum = (x + x2 + x3 + x4 + x5);
+            tests.add(xSum);   
+        }
+        System.out.println("    Multiple number test: " + tests);
+    }
+    
+    void cheaterCheater()
+    {
+        String  newValue;
+        char response, affirmative, negatory;
+        int cheaterValue;
+        Scanner reader2 = new Scanner(System.in);
+        System.out.println();
+        while(true)
+        {
+            try
+            {
+                System.out.print("Would you like to Cheat? enter y or n");
+                response = reader2.next().charAt(0);
+                //response.toUpperCase();
+                affirmative = 'y';
+                negatory = 'n';
+                
+                if(response == affirmative)
+                {
+                    Scanner reader3 = new Scanner(System.in);
+                    System.out.println();
+                    System.out.print("Please enter your desired value: ");
+                    newValue = reader3.nextLine();
+                    cheaterValue = Integer.parseInt(newValue);
+                    if (sides >= cheaterValue && cheaterValue >= 1)
+                    {    
+                        value = cheaterValue;
+                        System.out.println("Congrats you rolled a " + value);
+                        System.out.println();
+                        System.out.println("    Single number test sum : " + value);
+                        return;
+                    }
+                    else
+                    {
+                        System.out.println("Invlaid request");
+                        System.out.println("YOU HAVE BEEN CAUGHT CHEATING");
+                        System.out.println("GAME OVER!!!");
+                        System.out.println("Press Enter key to continue...");
+                        try
+                        {
+                            System.in.read();
+                            System.exit(0);
+                            //System.in.read();
+                        }  
+                        catch(Exception e)
+                        {
+                        }  
+                        
+                    }
+                }
+                else if(response == negatory)
+                {
+                    System.out.println("Good Choice. Press Enter key to continue...");
+                    try
+                    {
+                        System.in.read();
+                        System.out.println("    Single number test sum : " + value);
+                        return;
+                        //System.in.read();
+                    }  
+                    catch(Exception e)
+                    {
+                    }  
+                    
+                    DieObject.displayMenu();
+                }
+            }
+            catch(Exception e)
+            {
+                System.out.println("Your entry was not 'y' or 'n'");
+            }
+        }   
+    }
+}    
+ 
+  
+ 
+

@@ -1,0 +1,67 @@
+Race Card Menu
+Customize your race card
+----------------------------------------------
+1: Sort by name
+2: Sort by Species
+3: Sort by Speed
+4: Allow Fighting
+5: Return to Character Setup
+6: Run race
+7: Exit program
+
+Please enter your selection => 1
+John ==>       John    Cheetah  120.0   16.0
+Lily ==>       Lily        Pig   13.5    1.4
+Luke ==>       Luke        Dog   20.0    2.1
+Mark ==>       Mark   Tortoise    0.3    0.0
+Mathew ==>     Mathew       Hare   21.5    2.2
+Zebedee ==>    Zebedee      Horse   19.7    2.0
+
+
+Press any key to continue...
+
+
+Race Card Menu
+Customize your race card
+----------------------------------------------
+1: Sort by name
+2: Sort by Species
+3: Sort by Speed
+4: Allow Fighting
+5: Return to Character Setup
+6: Run race
+7: Exit program
+
+Please enter your selection => 2
+       John    Cheetah  120.0   16.0
+       Luke        Dog   20.0    2.1
+     Mathew       Hare   21.5    2.2
+    Zebedee      Horse   19.7    2.0
+       Lily        Pig   13.5    1.4
+       Mark   Tortoise    0.3    0.0
+
+
+Press any key to continue...
+
+
+Race Card Menu
+Customize your race card
+----------------------------------------------
+1: Sort by name
+2: Sort by Species
+3: Sort by Speed
+4: Allow Fighting
+5: Return to Character Setup
+6: Run race
+7: Exit program
+
+Please enter your selection => 3
+0.28 ==>       Mark   Tortoise    0.3    0.0
+13.5 ==>       Lily        Pig   13.5    1.4
+19.65 ==>    Zebedee      Horse   19.7    2.0
+20.0 ==>       Luke        Dog   20.0    2.1
+21.48 ==>     Mathew       Hare   21.5    2.2
+120.0 ==>       John    Cheetah  120.0   16.0
+
+
+Press any key to continue...

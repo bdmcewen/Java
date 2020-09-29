@@ -1,0 +1,103 @@
+Raw Data is:
+CCGGTTATGTTCATCGCCAGCCCTGCGCGAGGTCTGTGGTTATCAGTCGAATGATCTCGAGCAACTGTCCCCTATACAGCACGCATAGGGAAGTGTCATAAATGGAGTCCCCTATATTG
+AGTAGAATCGATTTAAAGTGAAGATGGCCGTTTGACACAAATCGAACAGAGCGGTCCTCCGAACGAACTAAAGGGAGCACGGCGCATTTCATGAAGATCCCGTTTGTATCGCTAACGTG
+GGCTCTCCGAGCCCATGGCTCGAACGTTAAAATTGTGGTCAGAAGATTCGCCCAATGTCAAGCGAGGAGTTGGGATCTTCTAGTTGTTGTAGATCTTACGGTCGTGGACGATTTGCGAC
+GGGATTTGTACTTCGAACAGCTTGATGTAGTGAACTCAGAGGACATGCGTTCTATGACGTGCGGTAGACTGCCGGTCAATGCTATGGAATTCGCGATCGAATCCCGCTAAGATGCTCTC
+ACAGAAAGACTTGTAAACTTCCCG
+
+Processed Data:
+CCGGTTATGTTCATCGCCAGCCCTGCGCGAGGTCTGTGGTTATCAGTCGAATGATCTCGAGCAACTGTCCCCTATACAGCACGCATAGGGAAGTGTCATAAATGGAGTCCCCTATATT
+GAGTAGAATCGATTTAAAGTGAAGATGGCCGTTTGACACAAATCGAACAGAGCGGTCCTCCGAACGAACTAAAGGGAGCACGGCGCATTTCATGAAGATCCCGTTTGTATCGCTAACG
+TGGGCTCTCCGAGCCCATGGCTCGAACGTTAAAATTGTGGTCAGAAGATTCGCCCAATGTCAAGCGAGGAGTTGGGATCTTCTAGTTGTTGTAGATCTTACGGTCGTGGACGATTTGC
+GACGGGATTTGTACTTCGAACAGCTTGATGTAGTGAACTCAGAGGACATGCGTTCTATGACGTGCGGTAGACTGCCGGTCAATGCTATGGAATTCGCGATCGAATCCCGCTAAGATGCT
+CTCACAGAAAGACTTGTAAACTTCCCG
+
+Processed RNA Data:
+UCCAGGAUUCUUAGUCCUUAUCCCUAAUUCAGGGGAUCGGCCCGUCCCUCUAUCCUUUGGCGGGGCACGUACGCCGUAGAACCAACGCUGGGUUUUAAAC
+
+Sequence AT found at index: 5
+
+Subsequence CAT found at 1
+
+Repeating sequences:
+[GTCCCCTATA]
+
+One Character Sequences
+Sequence 'A' Occures 19 times
+Sequence 'C' Occures 30 times
+Sequence 'G' Occures 24 times
+Sequence 'T' Occures 27 times
+
+Two Character Sequences
+Sequence 'AA' Occures 5 times
+Sequence 'AC' Occures 4 times
+Sequence 'AG' Occures 4 times
+Sequence 'AT' Occures 5 times
+Sequence 'CA' Occures 4 times
+Sequence 'CC' Occures 11 times
+Sequence 'CG' Occures 7 times
+Sequence 'CT' Occures 7 times
+Sequence 'GA' Occures 3 times
+Sequence 'GC' Occures 5 times
+Sequence 'GG' Occures 11 times
+Sequence 'GT' Occures 5 times
+Sequence 'TA' Occures 7 times
+Sequence 'TC' Occures 9 times
+Sequence 'TG' Occures 2 times
+Sequence 'TT' Occures 9 times
+
+Three Character Sequences
+Sequence 'AAA' Occures 1 times
+Sequence 'AAC' Occures 2 times
+Sequence 'AAT' Occures 1 times
+Sequence 'ACC' Occures 1 times
+Sequence 'ACG' Occures 3 times
+Sequence 'AGA' Occures 1 times
+Sequence 'AGG' Occures 2 times
+Sequence 'AGT' Occures 1 times
+Sequence 'ATC' Occures 3 times
+Sequence 'ATT' Occures 2 times
+Sequence 'CAA' Occures 1 times
+Sequence 'CAC' Occures 1 times
+Sequence 'CAG' Occures 2 times
+Sequence 'CCA' Occures 2 times
+Sequence 'CCC' Occures 3 times
+Sequence 'CCG' Occures 2 times
+Sequence 'CCT' Occures 4 times
+Sequence 'CGC' Occures 2 times
+Sequence 'CGG' Occures 2 times
+Sequence 'CGT' Occures 3 times
+Sequence 'CTA' Occures 2 times
+Sequence 'CTC' Occures 1 times
+Sequence 'CTG' Occures 1 times
+Sequence 'CTT' Occures 3 times
+Sequence 'GAA' Occures 1 times
+Sequence 'GAT' Occures 2 times
+Sequence 'GCA' Occures 1 times
+Sequence 'GCC' Occures 2 times
+Sequence 'GCG' Occures 1 times
+Sequence 'GCT' Occures 1 times
+Sequence 'GGA' Occures 2 times
+Sequence 'GGC' Occures 3 times
+Sequence 'GGG' Occures 5 times
+Sequence 'GGT' Occures 1 times
+Sequence 'GTA' Occures 2 times
+Sequence 'GTC' Occures 2 times
+Sequence 'GTT' Occures 1 times
+Sequence 'TAA' Occures 2 times
+Sequence 'TAC' Occures 1 times
+Sequence 'TAG' Occures 2 times
+Sequence 'TAT' Occures 2 times
+Sequence 'TCA' Occures 1 times
+Sequence 'TCC' Occures 5 times
+Sequence 'TCG' Occures 1 times
+Sequence 'TCT' Occures 2 times
+Sequence 'TGG' Occures 2 times
+Sequence 'TTA' Occures 3 times
+Sequence 'TTC' Occures 2 times
+Sequence 'TTG' Occures 1 times
+Sequence 'TTT' Occures 3 times
+
+Longest common Subsequence length: 100
+Longest common Subsequence:
+TCCAGGATTCTTAGTCCTTATCCCTAATTCAGGGGATCGGCCCGTCCCTCTATCCTTTGGCGGGGCACGTACGCCGTAGAACCAACGCTGGGTTTTAAAC
