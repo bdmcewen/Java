@@ -114,7 +114,9 @@ public class Email {
     }
 
     // Change user password
-
+    public void setPassword(String password){
+        this.password = password;
+    }
 
     @Override
     public String toString() {
