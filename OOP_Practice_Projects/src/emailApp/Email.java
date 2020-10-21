@@ -12,7 +12,7 @@ public class Email {
     private String department;
     private String emailAddress;
     private int mailboxCapacity = 500;
-    private int defaultPasswordLength = 12;
+    private final int defaultPasswordLength = 12;
     private String alternateEmail;
 
 
@@ -25,18 +25,18 @@ public class Email {
 
         // Call a method asking for the dept + return the dept
         this.department = setDepartment();
-        System.out.println("Dept set: " + this.department);
-        System.out.println();
+//        System.out.println("Dept set: " + this.department);
+//        System.out.println();
 
         // Call a method that returns a random password
         this.password = setPassword(this.defaultPasswordLength);
-        System.out.println("Password set: " + this.password);
-        System.out.println();
+//        System.out.println("Password set: " + this.password);
+//        System.out.println();
 
         // call Method that returns an auto-generated email address
         this.emailAddress = setEmailAddress();
-        System.out.println("Email set: " + this.emailAddress);
-        System.out.println();
+//        System.out.println("Email set: " + this.emailAddress);
+//        System.out.println();
 
 
 //        System.out.print(this);
@@ -133,13 +133,22 @@ public class Email {
     @Override
     public String toString() {
         return "Email{" +
-                "firstName='" + firstName + '\'' +
+                "companySuffix='" + companySuffix + '\'' +
+                ", firstName='" + firstName + '\'' +
                 ", lastName='" + lastName + '\'' +
                 ", password='" + password + '\'' +
                 ", department='" + department + '\'' +
+                ", emailAddress='" + emailAddress + '\'' +
                 ", mailboxCapacity=" + mailboxCapacity +
+                ", defaultPasswordLength=" + defaultPasswordLength +
                 ", alternateEmail='" + alternateEmail + '\'' +
                 '}';
+    }
+
+    public String showInfo(){
+        return "DISPLAY NAME: " + this.firstName + " " + this.lastName + "\n" +
+                "COMPANY EMAIL: " + this.emailAddress + "\n" +
+                "MAILBOX CAPACITY: " + this.mailboxCapacity + "mb";
     }
 
 

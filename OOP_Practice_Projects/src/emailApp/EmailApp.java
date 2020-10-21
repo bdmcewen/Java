@@ -12,6 +12,8 @@ public class EmailApp {
 //        System.out.println(em1.getMailboxCapacity());
 //        em1.setPassword("!ns3cur3");
 //        System.out.println(em1.getPassword());
+
+        System.out.println(em1.showInfo());
     }
 
 }
