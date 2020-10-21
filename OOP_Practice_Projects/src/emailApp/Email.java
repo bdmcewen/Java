@@ -3,12 +3,16 @@ package emailApp;
 import java.util.Scanner;
 
 public class Email {
+
+    final private String companySuffix = "company.com";
     // Attributes
     private String firstName;
     private String lastName;
     private String password;
     private String department;
+    private String emailAddress;
     private int mailboxCapacity;
+    private int defaultPasswordLength = 12;
     private String alternateEmail;
 
 
@@ -25,15 +29,17 @@ public class Email {
         System.out.println();
 
         // Call a method that returns a random password
-        this.password = setPassword(12);
+        this.password = setPassword(this.defaultPasswordLength);
         System.out.println("Password set: " + this.password);
         System.out.println();
 
-        // Call method that returns email capacity
-//        this.mailboxCapacity = setMailboxCap();
-//        System.out.println("Email cap set : " + this.mailboxCapacity);
+        // Combine elements to generate emailAddress
+        this.emailAddress = this.firstName.toLowerCase() + "." + this.lastName.toLowerCase() + "@"
+                + this.department.toLowerCase() + "." + this.companySuffix;
+        System.out.println("Email set: " + this.emailAddress);
 
-        System.out.print(this);
+
+//        System.out.print(this);
     }
 
 
