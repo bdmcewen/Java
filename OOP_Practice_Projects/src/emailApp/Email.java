@@ -118,6 +118,18 @@ public class Email {
         this.password = password;
     }
 
+    public int getMailboxCapacity() {
+        return mailboxCapacity;
+    }
+
+    public String getAlternateEmail() {
+        return alternateEmail;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
     @Override
     public String toString() {
         return "Email{" +
