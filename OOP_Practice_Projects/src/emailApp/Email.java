@@ -11,7 +11,7 @@ public class Email {
     private String password;
     private String department;
     private String emailAddress;
-    private int mailboxCapacity;
+    private int mailboxCapacity = 500;
     private int defaultPasswordLength = 12;
     private String alternateEmail;
 
@@ -33,15 +33,14 @@ public class Email {
         System.out.println("Password set: " + this.password);
         System.out.println();
 
-        // Combine elements to generate emailAddress
-        this.emailAddress = this.firstName.toLowerCase() + "." + this.lastName.toLowerCase() + "@"
-                + this.department.toLowerCase() + "." + this.companySuffix;
+        // call Method that returns an auto-generated email address
+        this.emailAddress = setEmailAddress();
         System.out.println("Email set: " + this.emailAddress);
+        System.out.println();
 
 
 //        System.out.print(this);
     }
-
 
     // Ask for Department
     private String setDepartment() {
@@ -59,7 +58,7 @@ public class Email {
         } else {
             return "Invalid selection, returning";
         }
-
+        //TODO: implement switch statement rather than if else
         //TODO: implement wait for key press before returning
     }
 
@@ -91,10 +90,28 @@ public class Email {
         //TODO: Learn how to hash password w/salt & password masking
     }
 
-    // set mailbox capacity
+    //generate email Address
+    private String setEmailAddress() {
+        this.emailAddress = this.firstName.toLowerCase()
+                + "."
+                + this.lastName.toLowerCase()
+                + "@"
+                + this.department.toLowerCase()
+                + "."
+                + this.companySuffix;
+
+        return emailAddress;
+    }
+
+    // Set mailbox capacity
+    public void setMailboxCapacity(int capacity){
+        this.mailboxCapacity = capacity;
+    }
+
+    // Set alternate email
 
 
-    // change email password
+    // Change user password
 
     @Override
     public String toString() {
