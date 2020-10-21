@@ -109,9 +109,12 @@ public class Email {
     }
 
     // Set alternate email
-
+    public void setAlternateEmail(String altEmail){
+        this.alternateEmail = altEmail;
+    }
 
     // Change user password
+
 
     @Override
     public String toString() {
