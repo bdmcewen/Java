@@ -21,13 +21,17 @@ public class Email {
 
         // Call a method asking for the dept + return the dept
         this.department = setDepartment();
-        System.out.println("Dept set: "  + this.department);
+        System.out.println("Dept set: " + this.department);
         System.out.println();
 
         // Call a method that returns a random password
-        this.password = setPassword();
-        System.out.println("Password set: " );
+        this.password = setPassword(12);
+        System.out.println("Password set: " + this.password);
         System.out.println();
+
+        // Call method that returns email capacity
+//        this.mailboxCapacity = setMailboxCap();
+//        System.out.println("Email cap set : " + this.mailboxCapacity);
 
         System.out.print(this);
     }
@@ -54,22 +58,35 @@ public class Email {
     }
 
     // generate random password
-    private String setPassword() {
-        Scanner ps1 = new Scanner(System.in);
-        System.out.print("Enter new user password: ");
-        String newPassword1 = ps1.nextLine();
-        Scanner ps2 = new Scanner(System.in);
-        System.out.print("Enter new user password again: ");
-        String newPassword2 = ps2.nextLine();
-        if (newPassword1.equals(newPassword2)) {
-            return newPassword1;
-        } else {
-            return "Error.";
+    private String setPassword(int length) {
+        // code block for randomly generated password
+        String passwordSet = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890!@#$%";
+        char[] password = new char[length];
+        for (int i = 0; i < length; i++) {
+            int rand = (int) (Math.random() * passwordSet.length());
+            password[i] = passwordSet.charAt(rand);
         }
+        return new String(password);
+
+        // code block for user defined password
+//        Scanner ps1 = new Scanner(System.in);
+//        System.out.print("Enter new user password: ");
+//        String newPassword1 = ps1.nextLine();
+//        Scanner ps2 = new Scanner(System.in);
+//        System.out.print("Enter new user password again: ");
+//        String newPassword2 = ps2.nextLine();
+//        if (newPassword1.equals(newPassword2)) {
+//            return newPassword1;
+//        } else {
+//            return "Error.";
+//        }
+
+        //TODO: add security constraints on password
         //TODO: Learn how to hash password w/salt & password masking
     }
 
     // set mailbox capacity
+
 
     // change email password
 
