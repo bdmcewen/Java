@@ -1,25 +1,26 @@
 package studetndatabaseapp;
 
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Student {
 
     // region Attributes
 
-    private String firstName;
-    private String lastName;
-    private int academicStanding;
-    private String studentID;
-    private String course;
-    private int tuitionBalance;
-    private static int courseCost = 600;
+    private static final int courseCost = 600;
     private static int id = 1000;
+    private final String firstName;
+    private final String lastName;
+    private final int academicStanding;
+    private String studentID;
+    private final ArrayList<String> courses;
+    private int tuitionBalance;
 
     // endregion
 
     // region Constructor(s)
-    public Student(){
-
+    public Student() {
+        this.courses = new ArrayList<>();
         //The user should be prompted to enter the name and year for each student
         Scanner infoIn = new Scanner(System.in);
 
@@ -41,7 +42,7 @@ public class Student {
         // Call method to generate and set studentID
         setStudentID();
 
-        System.out.println(this);
+//        System.out.println(this);
     }
 
 
@@ -60,11 +61,31 @@ public class Student {
     // endregion
 
 
-
     // region Behaviors
 
 
     //Enroll in course
+    public void enroll() {
+        //start loop until user enters
+        do {
+            System.out.println("Enter course to enroll (Q to quit)");
+
+            Scanner courseIn = new Scanner(System.in);
+            String course = courseIn.nextLine();
+            course = course.toUpperCase();
+//        System.out.println("TEST COURSE: " + course);
+            if (!course.equals("Q")) {
+                this.courses.add(course);
+                this.tuitionBalance += courseCost;
+            } else {
+                break;
+            }
+        } while (true);
+
+        System.out.println("Enrolled in:" + this.courses);
+        System.out.println("Tuition Balance: " + this.tuitionBalance);
+
+    }
 
     //view balance
 
@@ -82,7 +103,7 @@ public class Student {
                 ", lastName='" + lastName + '\'' +
                 ", academicStanding='" + academicStanding + '\'' +
                 ", studentID=" + studentID +
-                ", course='" + course + '\'' +
+                ", courses='" + courses + '\'' +
                 ", tuitionBalance=" + tuitionBalance +
                 ", courseCost=" + courseCost +
                 '}';
@@ -93,7 +114,6 @@ public class Student {
 
 
     // endregion
-
 
 
 }
