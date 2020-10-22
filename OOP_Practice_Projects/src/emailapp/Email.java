@@ -1,4 +1,4 @@
-package emailApp;
+package emailapp;
 
 import java.util.Scanner;
 
@@ -146,6 +146,7 @@ public class Email {
     }
 
     public String showInfo(){
+        System.out.println();
         return "DISPLAY NAME: " + this.firstName + " " + this.lastName + "\n" +
                 "COMPANY EMAIL: " + this.emailAddress + "\n" +
                 "MAILBOX CAPACITY: " + this.mailboxCapacity + "mb";
