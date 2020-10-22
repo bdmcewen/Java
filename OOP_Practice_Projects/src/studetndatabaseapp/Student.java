@@ -8,11 +8,12 @@ public class Student {
 
     private String firstName;
     private String lastName;
-    private String academicStanding;
-    private int studentID;
+    private int academicStanding;
+    private String studentID;
     private String course;
     private int tuitionBalance;
-    private final int courseCost = 600;
+    private static int courseCost = 600;
+    private static int id = 1000;
 
     // endregion
 
@@ -29,11 +30,16 @@ public class Student {
         this.lastName = infoIn.nextLine();
 
         System.out.print("Academic Standings: \n1 - Freshman\n2 - Sophmore\n3 - Junior\n4 - Senior\nEnter student's standing:");
-        if (infoIn.nextInt() == 1){this.academicStanding = "Freshman";}
-        else if (infoIn.nextInt() == 2){this.academicStanding = "Sophmore";}
-        else if (infoIn.nextInt() == 3){this.academicStanding = "Junior";}
-        else if (infoIn.nextInt() == 4){this.academicStanding = "Senior";}
-        else {System.out.println("Invalid Response" );}
+        this.academicStanding = infoIn.nextInt();
+//        if (infoIn.nextInt() == 1){this.academicStanding = "Freshman";}
+//        else if (infoIn.nextInt() == 2){this.academicStanding = "Sophmore";}
+//        else if (infoIn.nextInt() == 3){this.academicStanding = "Junior";}
+//        else if (infoIn.nextInt() == 4){this.academicStanding = "Senior";}
+//        else {System.out.println("Invalid Response" );}
+
+
+        // Call method to generate and set studentID
+        setStudentID();
 
         System.out.println(this);
     }
@@ -42,8 +48,18 @@ public class Student {
     // endregion
 
     // region Getters & Setters
-    // generate id
+
+
+    private void setStudentID() {
+        //generate 5 digit student ID starting with academic standing code Autoincrements: 1
+        id++;
+        this.studentID = this.academicStanding + "" + id;
+    }
+
+
     // endregion
+
+
 
     // region Behaviors
 
