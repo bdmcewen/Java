@@ -1,6 +1,5 @@
-package studetndatabaseapp;
+package studentdatabaseapp;
 
-import java.sql.SQLOutput;
 import java.util.ArrayList;
 import java.util.Scanner;
 
