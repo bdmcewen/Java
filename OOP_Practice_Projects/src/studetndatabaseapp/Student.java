@@ -12,8 +12,8 @@ public class Student {
     private final String firstName;
     private final String lastName;
     private final int academicStanding;
-    private String studentID;
     private final ArrayList<String> courses;
+    private String studentID;
     private int tuitionBalance;
 
     // endregion
@@ -60,7 +60,6 @@ public class Student {
 
     // endregion
 
-
     // region Behaviors
 
 
@@ -87,9 +86,25 @@ public class Student {
 
     }
 
-    //view balance
+    // View Balance
+    public void viewBalance() {
+        System.out.println("Your balance is " + tuitionBalance);
+    }
 
-    //Pay Tuition
+    // Pay Tuition
+    public void payTuition() {
+        viewBalance();
+        // request payment amount here
+        Scanner in = new Scanner(System.in);
+        System.out.print("Enter payment amount: ");
+        int payment = in.nextInt();
+
+        //adjust tuition balance
+        this.tuitionBalance -= payment;
+        System.out.println("Thank you for your payment of: " + payment);
+        viewBalance();
+
+    }
 
 
     // endregion
