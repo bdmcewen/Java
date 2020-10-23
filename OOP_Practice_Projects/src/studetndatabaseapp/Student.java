@@ -80,7 +80,7 @@ public class Student {
                 break;
             }
         } while (true);
-
+//TODO: show tuition balance after enroll and ask if user wishes to proceed.
         System.out.println("Enrolled in:" + this.courses);
         System.out.println("Tuition Balance: " + this.tuitionBalance);
 
@@ -126,7 +126,11 @@ public class Student {
 
 
     // Show Status
-
+    public String showStatus(){
+        return "Name:" + this.firstName + " " + this.lastName +
+                "\nRegistered course: " + courses +
+                "\nBalance: " + tuitionBalance;
+    }
 
     // endregion
 

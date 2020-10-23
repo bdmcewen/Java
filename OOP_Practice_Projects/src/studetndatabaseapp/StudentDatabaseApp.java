@@ -8,11 +8,12 @@ public class StudentDatabaseApp {
 
         //Testing
         s1.enroll();
-        s1.payTuition();
+//        s1.payTuition();
 
         //Display
         System.out.println();
-        System.out.println(s1.toString());
+//        System.out.println(s1.toString());
+        System.out.println(s1.showStatus());
 
 
     }
