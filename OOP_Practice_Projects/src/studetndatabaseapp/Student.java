@@ -1,5 +1,6 @@
 package studetndatabaseapp;
 
+import java.sql.SQLOutput;
 import java.util.ArrayList;
 import java.util.Scanner;
 
@@ -66,8 +67,9 @@ public class Student {
     //Enroll in course
     public void enroll() {
         //start loop until user enters
+        System.out.println("Enter course to enroll (Q to quit)");
         do {
-            System.out.println("Enter course to enroll (Q to quit)");
+            System.out.print("Enter Course ID: ");
 
             Scanner courseIn = new Scanner(System.in);
             String course = courseIn.nextLine();
@@ -82,7 +84,7 @@ public class Student {
         } while (true);
 //TODO: show tuition balance after enroll and ask if user wishes to proceed.
         System.out.println("Enrolled in:" + this.courses);
-        System.out.println("Tuition Balance: " + this.tuitionBalance);
+//        System.out.println("Tuition Balance: " + this.tuitionBalance);
 
     }
 
