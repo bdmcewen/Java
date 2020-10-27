@@ -8,7 +8,7 @@ Project 3
 
 ## Your application should do the following:
 
-```
+```Java
 - Read a .csv file of names, social security numbers, account type, and initial deposit
 - Use a proper datastructure to hold all these accounts
 - Both savings and checking accounts will have the following attributes:
@@ -31,5 +31,20 @@ Project 3
     - checkings accounts will use 15% of the base rate
 - The showinfo() method should reveal relevant account holder information 
     as well as inforamtion specific to checking/savings
+```
+## Skills required
+```Java
+- Application architecture
+- OOP concepts
+    - abstract class
+    - abstract Methods
+    - interface API
+        - use of implements
+    - Constructors
+        - Use of super key word
+    - Encapsulation
+        - access modifiyers
+            - private, static, 
+
 ```
 
