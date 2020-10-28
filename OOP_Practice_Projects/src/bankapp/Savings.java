@@ -10,11 +10,16 @@ public class Savings extends Account {
         super(name, sSn, initDeposit);
         accountNumber = "1" + accountNumber;
 
-        //for testing
-        System.out.println("Savings account creation successful");
-        System.out.println(this.toString());
-        System.out.println();
+//        //for testing
+//        System.out.println("Savings account creation successful");
+//        System.out.println(this.toString());
+//        System.out.println();
     }
 
     // List methods unique to this account type
+    @Override
+    public void showInfo() {
+        System.out.println("Account Type: Savings");
+        super.showInfo();
+    }
 }

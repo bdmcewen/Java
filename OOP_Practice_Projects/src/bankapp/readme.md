@@ -8,7 +8,7 @@ Project 3
 
 ## Your application should do the following:
 
-```Java
+```
 - Read a .csv file of names, social security numbers, account type, and initial deposit
 - Use a proper datastructure to hold all these accounts
 - Both savings and checking accounts will have the following attributes:
@@ -33,18 +33,22 @@ Project 3
     as well as inforamtion specific to checking/savings
 ```
 ## Skills required
-```Java
+```
 - Application architecture
 - OOP concepts
-    - abstract class
-    - abstract Methods
-    - interface API
-        - use of implements
+    - Inheritance
+        - abstract super class
+        - abstract super methods
     - Constructors
-        - Use of super key word
+        - use of super key word
+    - Interface API
+        - use of implements 
     - Encapsulation
         - access modifiyers
-            - private, static, 
+            - private, static(auto_increment)
+    - Polymorphism
+        - @override, showInfo()
+            - super.showInfo();
 
 ```
 
