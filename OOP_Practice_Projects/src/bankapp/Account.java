@@ -22,9 +22,8 @@ public abstract class Account implements IBaseRate {
         accountNumber = generateAccountNumber();
 
 
-        //for test
-        System.out.print("New Account Created: ");
-        System.out.println(this.toString());
+
+
     }
 
     // List common methods of both account types
