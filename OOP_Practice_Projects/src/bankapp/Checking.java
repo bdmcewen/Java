@@ -3,6 +3,9 @@ package bankapp;
 public class Checking extends Account {
 
     //List properties unique to this account type
+    int debitCardNumber;
+    int debitCardPin;
+
 
     // Constructor to set properties  and initialize account
     public Checking(String name){

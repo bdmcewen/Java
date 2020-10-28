@@ -6,7 +6,7 @@ public abstract class Account implements IBaseRate {
     String sSN;
     double balance;
 
-    String accountnumber;
+    String accountNumber;
     double rate;
 
     // Constructor to set base properties  and initialize accounts
