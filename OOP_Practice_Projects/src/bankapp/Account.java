@@ -25,10 +25,10 @@ public abstract class Account implements IBaseRate {
 
     // List common methods of both account types
     public String generateAccountNumber() {
-        String lastTwoofsSn = sSN.substring(sSN.length() - 2);
+        String lastTwoOfsSn = sSN.substring(sSN.length() - 2);
         int uniqueID = index;
         int randNum = (int) (Math.random() * Math.pow(10, 3));
-        return lastTwoofsSn + uniqueID + randNum;
+        return lastTwoOfsSn + uniqueID + randNum;
     }
 
     public void showInfo() {
