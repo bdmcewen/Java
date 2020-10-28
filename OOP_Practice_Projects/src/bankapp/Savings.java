@@ -13,19 +13,10 @@ public class Savings extends Account {
         // call method to set safety deposit box
         setSafetyDepositBox();
 
-//        //for testing
-//        System.out.println("Savings account creation successful");
-//        System.out.println(this.toString());
-//        System.out.println();
     }
 
-    // List methods unique to this account type
 
-    private void setSafetyDepositBox(){
-        safetyDepositBoxID =(int)(Math.random() * Math.pow(10,3));
-        safetyDepositBoxKey =(int)(Math.random() * Math.pow(10,4));
-
-    }
+    // Methods shared between account types
     @Override
     public void showInfo() {
         System.out.println("Account Type: Savings");
@@ -33,4 +24,19 @@ public class Savings extends Account {
         System.out.println("\tSafety Deposit Box ID: " + safetyDepositBoxID +
                 "\n\tSafety Deposit Box KEY: " + safetyDepositBoxKey);
     }
+
+    @Override
+    public void setRate() {
+        rate = getBaseRate() - .25;
+    }
+
+    // Methods unique to this account type
+
+    private void setSafetyDepositBox() {
+        safetyDepositBoxID = (int) (Math.random() * Math.pow(10, 3));
+        safetyDepositBoxKey = (int) (Math.random() * Math.pow(10, 4));
+
+    }
+
+
 }

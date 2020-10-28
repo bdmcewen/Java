@@ -38,7 +38,7 @@ Project 3
 - OOP concepts
     - Inheritance
         - abstract super class
-        - abstract super methods
+        - abstract super methods,  account.setRate()
     - Constructors
         - use of super key word
     - Interface API

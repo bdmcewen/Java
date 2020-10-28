@@ -15,17 +15,18 @@ public class Checking extends Account {
         // call method to set debitcard
         setDebitCard();
 
-//        //for testing
-//        System.out.println("Checking account creation successful");
-//        System.out.println(this.toString());
-//        System.out.println();
+    }
+
+    @Override
+    public void setRate() {
+        rate = getBaseRate() * .15;
     }
 
 
     // List methods unique to this account type
     private void setDebitCard() {
-        debitCardNumber =(int)(Math.random() * Math.pow(10,12)) ;
-        debitCardPin =(int)(Math.random() * Math.pow(10,4)) ;
+        debitCardNumber = (int) (Math.random() * Math.pow(10, 12));
+        debitCardPin = (int) (Math.random() * Math.pow(10, 4));
     }
 
     @Override
